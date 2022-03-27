@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/resume.css">
+    <script src="scripts/colors.js"></script>
+    <title>Profile</title>
+</head>
+<body>
+    <div id="container">
+        <div class="navigation">
+            <div class="button_container">
+                <input type="button" value="야간모드" onclick="nightDayHandler(this);">
+            </div>
+            <div class="img_container">
+                <img id="img_profile" src="images/profile.jpeg" alt="프로필 사진">
+            </div>
+            <ul class="profile_links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </div>
+        <div class="profile_sections">
+            <div id="about" class="profile_section">
+                <h1 class="section_title"><span class="highlight">DEV</span><br>HYEONJOO</h1>
+                <div class="sub_section_dsc">machinahj@gmail.com</div>
+                <div class="section_content">
+                    <p>안녕하세요. 웹 개발자가 되고 싶은 기구 개발자 김현주입니다.</p>
+                    <ul>
+                        <li><span>하는 일</span> : 기계공학을 전공하고 기구 개발자로서 가전제품을 설계하고 있습니다.</li>
+                        <li><span>좋아하는 것</span> : 여행과 맥주를 좋아하여 브루어리 투어룰 하고 있습니다.</li>
+                        <li><span>사는 곳</span> : 서울 성동구에 거주 중입니다.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="experience" class="profile_section">
+                <h2 class="section_title"><span class="highlight">EXPERIENCE</span></h2>
+                <div class="sub_section">
+                    <div class="sub_section_header">
+                        <h3 class="sub_section_title">Mechanical Engineer</h3>
+                        <div class="sub_section_dsc">2017.3 ~ present</div>
+                    </div>
+                    <div class="section_content">
+                        <p>제품 외관 및 구동부 설계</p>
+                    </div>
+                </div>
+                <div class="sub_section">
+                    <div class="sub_section_header">
+                        <h3 class="sub_section_title">Front-End Developer</h3>
+                        <div class="sub_section_dsc">present ~ </div>
+                    </div>
+                    <div class="section_content">
+                        <p>열심히 준비중입니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="skills" class="profile_section">
+                <h2 class="section_title"><span class="highlight">SKILLS</span></h2>
+                <div class="sub_section">
+                    <div class="sub_section_header">
+                        <h3 class="sub_section_title">PROGRAMMING LANGUAGES</h3>
+                    </div>
+                    <div class="section_content">
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
