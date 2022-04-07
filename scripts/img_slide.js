@@ -5,12 +5,11 @@ let count = 0; // 몇번째 슬라이드인지 체크하기 위한 변수 선언
 document.addEventListener('DOMContentLoaded', function(){
     const div = document.querySelector('.slide_container');
     div.style.width = `${30*qtyOfImgs}vw`; // 슬라이드 컨테이너의 너비를 이미지 개수에 따라 동적으로 지정
-    let inner;
-    let myImg;
+    
     for(let i = 0; i < qtyOfImgs; i++){ // 이미지 개수 만큼 반복문 시행
-        inner = document.createElement('div'); // 이미지를 넣을 내부 컨테이너 생성
+        let inner = document.createElement('div'); // 이미지를 넣을 내부 컨테이너 생성
         inner.className = 'inner_slide_container';
-        myImg = document.createElement('img'); // 이미지 태그 생성
+        let myImg = document.createElement('img'); // 이미지 태그 생성
         myImg.setAttribute('src', `images/slide_${i+1}.jpeg`); // 이미지 태그의 src 속성에 이미지 연결
 
         div.appendChild(inner); // 컨테이너에 생성한 내부 컨테이너 태그 삽입
